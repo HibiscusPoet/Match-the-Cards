@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://bqaelepvbvk25"]
+
+[ext_resource type="Texture2D" uid="uid://dqvpcrqjtrg1a" path="res://cardsLarge_tilemap_packed.png" id="1_03acs"]
+
+[node name="Game" type="Node2D"]
+
+[node name="Card" type="Sprite2D" parent="."]
+texture = ExtResource("1_03acs")
+hframes = 14
+vframes = 4
