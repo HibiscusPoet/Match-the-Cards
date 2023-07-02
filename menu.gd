@@ -43,4 +43,5 @@ func _on_column_drop_down_menu_item_selected(index):
 	if current_selected == 3:
 		Values.numberOfColumns = 8
 
-
+func _on_button_pressed():
+	get_tree().change_scene_to_file("res://Game.tscn")

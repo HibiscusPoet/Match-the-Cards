@@ -1,10 +1,37 @@
-[gd_scene load_steps=2 format=3 uid="uid://bqaelepvbvk25"]
+[gd_scene load_steps=15 format=3 uid="uid://bqaelepvbvk25"]
 
-[ext_resource type="Texture2D" uid="uid://dqvpcrqjtrg1a" path="res://cardsLarge_tilemap_packed.png" id="1_03acs"]
+[ext_resource type="Script" path="res://Game.gd" id="1_kejso"]
+[ext_resource type="Texture2D" uid="uid://dxjsbunf3gbtt" path="res://Cards/card_clubs_A.png" id="2_uhpqm"]
+[ext_resource type="Texture2D" uid="uid://cqhpg5lyiswke" path="res://Cards/card_clubs_02.png" id="3_6eve8"]
+[ext_resource type="Texture2D" uid="uid://c0enseymr40bp" path="res://Cards/card_clubs_03.png" id="4_r856b"]
+[ext_resource type="Texture2D" uid="uid://k7gqfhhq7okc" path="res://Cards/card_clubs_04.png" id="5_snnuo"]
+[ext_resource type="Texture2D" uid="uid://c2oeia1jfsh88" path="res://Cards/card_clubs_05.png" id="6_ynwmw"]
+[ext_resource type="Texture2D" uid="uid://bnp3vnxypn284" path="res://Cards/card_clubs_06.png" id="7_y0m35"]
+[ext_resource type="Texture2D" uid="uid://bgduiextcivmn" path="res://Cards/card_clubs_07.png" id="8_kj7qw"]
+[ext_resource type="Texture2D" uid="uid://bmtwllk1hksw2" path="res://Cards/card_clubs_08.png" id="9_8x0fd"]
+[ext_resource type="Texture2D" uid="uid://i7k5pvklp6d8" path="res://Cards/card_clubs_09.png" id="10_a0n3a"]
+[ext_resource type="Texture2D" uid="uid://cst3tde63qed3" path="res://Cards/card_clubs_10.png" id="11_cayq8"]
+[ext_resource type="Texture2D" uid="uid://ptetpdbljust" path="res://Cards/card_clubs_J.png" id="12_bcveu"]
+[ext_resource type="Texture2D" uid="uid://c5qruf3o8xkwf" path="res://Cards/card_clubs_K.png" id="13_oeyo6"]
+[ext_resource type="Texture2D" uid="uid://crx5c6j4rjki3" path="res://Cards/card_clubs_Q.png" id="14_lsy6w"]
 
-[node name="Game" type="Node2D"]
+[node name="Game" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_kejso")
+cardArray = Array[Texture]([ExtResource("2_uhpqm"), ExtResource("3_6eve8"), ExtResource("4_r856b"), ExtResource("5_snnuo"), ExtResource("6_ynwmw"), ExtResource("7_y0m35"), ExtResource("8_kj7qw"), ExtResource("9_8x0fd"), ExtResource("10_a0n3a"), ExtResource("11_cayq8"), ExtResource("12_bcveu"), ExtResource("13_oeyo6"), ExtResource("14_lsy6w")])
 
-[node name="Card" type="Sprite2D" parent="."]
-texture = ExtResource("1_03acs")
-hframes = 14
-vframes = 4
+[node name="CenterContainer" type="CenterContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="GridContainer" type="GridContainer" parent="CenterContainer"]
+layout_mode = 2
