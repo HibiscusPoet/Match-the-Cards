@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://bqaelepvbvk25"]
+[gd_scene load_steps=28 format=3 uid="uid://bqaelepvbvk25"]
 
 [ext_resource type="Script" path="res://Game.gd" id="1_kejso"]
 [ext_resource type="Texture2D" uid="uid://dxjsbunf3gbtt" path="res://Cards/card_clubs_A.png" id="2_uhpqm"]
@@ -14,6 +14,19 @@
 [ext_resource type="Texture2D" uid="uid://ptetpdbljust" path="res://Cards/card_clubs_J.png" id="12_bcveu"]
 [ext_resource type="Texture2D" uid="uid://c5qruf3o8xkwf" path="res://Cards/card_clubs_K.png" id="13_oeyo6"]
 [ext_resource type="Texture2D" uid="uid://crx5c6j4rjki3" path="res://Cards/card_clubs_Q.png" id="14_lsy6w"]
+[ext_resource type="Texture2D" uid="uid://c1x6sdf3wtaad" path="res://Cards/card_hearts_A.png" id="15_8eoeg"]
+[ext_resource type="Texture2D" uid="uid://b0uqi08huwjob" path="res://Cards/card_hearts_02.png" id="16_5gpp8"]
+[ext_resource type="Texture2D" uid="uid://df54y17yskl0l" path="res://Cards/card_hearts_03.png" id="17_070yc"]
+[ext_resource type="Texture2D" uid="uid://bbamh1esgboy3" path="res://Cards/card_hearts_04.png" id="18_m64u1"]
+[ext_resource type="Texture2D" uid="uid://j58uvosa4prh" path="res://Cards/card_hearts_05.png" id="19_l4jsn"]
+[ext_resource type="Texture2D" uid="uid://clwgrl7odp10x" path="res://Cards/card_hearts_06.png" id="20_5dh3u"]
+[ext_resource type="Texture2D" uid="uid://dq8trb5r8lig2" path="res://Cards/card_hearts_07.png" id="21_8pxjk"]
+[ext_resource type="Texture2D" uid="uid://t321tmhblmee" path="res://Cards/card_hearts_08.png" id="22_7d4f2"]
+[ext_resource type="Texture2D" uid="uid://ctx7802c6jgqq" path="res://Cards/card_hearts_09.png" id="23_hxbd1"]
+[ext_resource type="Texture2D" uid="uid://i5fmnoga41lt" path="res://Cards/card_hearts_10.png" id="24_u7qht"]
+[ext_resource type="Texture2D" uid="uid://cl4yac8nko0fd" path="res://Cards/card_hearts_J.png" id="25_8g3hv"]
+[ext_resource type="Texture2D" uid="uid://cartnd0y5e7ra" path="res://Cards/card_hearts_K.png" id="26_fhkyx"]
+[ext_resource type="Texture2D" uid="uid://dkhk1cpwwrlmw" path="res://Cards/card_hearts_Q.png" id="27_f12k6"]
 
 [node name="Game" type="Control"]
 layout_mode = 3
@@ -23,7 +36,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_kejso")
-cardArray = Array[Texture]([ExtResource("2_uhpqm"), ExtResource("3_6eve8"), ExtResource("4_r856b"), ExtResource("5_snnuo"), ExtResource("6_ynwmw"), ExtResource("7_y0m35"), ExtResource("8_kj7qw"), ExtResource("9_8x0fd"), ExtResource("10_a0n3a"), ExtResource("11_cayq8"), ExtResource("12_bcveu"), ExtResource("13_oeyo6"), ExtResource("14_lsy6w")])
+cardArray = Array[Texture]([ExtResource("2_uhpqm"), ExtResource("3_6eve8"), ExtResource("4_r856b"), ExtResource("5_snnuo"), ExtResource("6_ynwmw"), ExtResource("7_y0m35"), ExtResource("8_kj7qw"), ExtResource("9_8x0fd"), ExtResource("10_a0n3a"), ExtResource("11_cayq8"), ExtResource("12_bcveu"), ExtResource("13_oeyo6"), ExtResource("14_lsy6w"), ExtResource("15_8eoeg"), ExtResource("16_5gpp8"), ExtResource("17_070yc"), ExtResource("18_m64u1"), ExtResource("19_l4jsn"), ExtResource("20_5dh3u"), ExtResource("21_8pxjk"), ExtResource("22_7d4f2"), ExtResource("23_hxbd1"), ExtResource("24_u7qht"), ExtResource("25_8g3hv"), ExtResource("26_fhkyx"), ExtResource("27_f12k6")])
 
 [node name="CenterContainer" type="CenterContainer" parent="."]
 layout_mode = 1
